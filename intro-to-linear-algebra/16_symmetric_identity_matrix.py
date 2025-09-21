@@ -9,7 +9,7 @@ X_T = X.T
 
 X_is_sym = X == X.T
 
-# identity matrix
+# identity matrix (I3)
 I_pt = torch.tensor([[1, 0, 0], [0, 1, 0], [0, 0, 1]])
 x_pt = torch.tensor([25, 2, 5])
 
