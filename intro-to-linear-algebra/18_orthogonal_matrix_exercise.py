@@ -16,9 +16,12 @@ norm_x3 = np.linalg.norm(x3)
 
 # print(f"norm (x1): {norm_x1}\nnorm (x2): {norm_x2}\nnorm (x3): {norm_x3}")
 
-k1 = np.array([(2/3), (-2/3), (1/3)])
-k2 = np.array([(1/2), (2/3), (2/3)])
-k3 = np.array([(2/3), (1/3), (-2/3)])
+K = np.array([[(2/3), (1/3), (2/3)], [(-2/3), (2/3), (1/3)], [(1/3), (2/3), (-2/3)]])
+
+# split K matrix columns
+k1 = K[:, 0]
+k2 = K[:, 1]
+k3 = K[:, 2]
 
 # get dot product of k1 and k2
 dot_k1_k2 = np.dot(k1, k2)
