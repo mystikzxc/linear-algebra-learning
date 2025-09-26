@@ -51,7 +51,7 @@ lambdas_PTP, V_PTP = torch.linalg.eig(PTP)
 print(f"V = {VT}")
 print(f"ATA = {V_PTP}")
 
-# # Non-zero singular vectors of A = square roots of eigenvectors AA^T = square roots of eigenvectors A^TA
+# # Non-zero singular vectors of A = square roots of eigenvalues AA^T = square roots of eigenvalues A^TA
 print(f"d = {d}")
 print(f"sqrt_AAT = {torch.sqrt(lambdas_PPT)}")
 print(f"sqrt_ATA = {torch.sqrt(lambdas_PTP)}")
