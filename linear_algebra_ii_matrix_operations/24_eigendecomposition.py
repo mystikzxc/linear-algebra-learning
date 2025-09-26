@@ -60,5 +60,3 @@ eig_decom = torch.matmul(Q, torch.matmul(Lambda, Q.T))
 # can demonstrate Q is orthogonal matrix Q^TQ = QQ^T = I
 QTQ = torch.matmul(Q.T, Q)
 QQT = torch.matmul(Q, Q.T)
-print(QTQ)
-print(QQT)
