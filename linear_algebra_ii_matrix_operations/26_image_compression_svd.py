@@ -18,7 +18,7 @@ imgmat = np.matrix(imgmat)
 plt.imshow(imgmat, cmap='gray')
 # plt.show()
 
-# calculat svd of image
+# calculate svd of image
 U, sigma, V = np.linalg.svd(imgmat)
 
 # grab first left singular vector (U), first singular value (sigma) and first right singular vector (V)

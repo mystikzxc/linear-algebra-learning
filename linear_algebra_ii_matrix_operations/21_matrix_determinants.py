@@ -10,7 +10,7 @@ det_N = np.linalg.det(N)
 # line results in "singular matrix" error since N doesn't have indipendent columns
 # Ninv = np.linalg.inv(N)
 
-N_pt = torch.tensor([[-4, 1], [-8, 2.]])
+N_pt = torch.tensor([[-4, 1], [-8, 2.]]) # must use float not int
 det_N_pt = torch.det(N_pt)
 
 print(det_N_pt)

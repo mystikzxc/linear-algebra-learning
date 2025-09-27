@@ -27,7 +27,7 @@ v = V[:,0]
 
 lamduh = lambdas[0] # lambda is a python function
 
-# Av = lambdav
+# Av = λv
 Av = np.dot(A, v)
 lam_v = lamduh * v
 
@@ -81,7 +81,7 @@ X = np.array([[25, 2, 9], [5, 26, -5], [3, 7, -1]])
 # lambdas_X (one eigenvalue per column) // V_X (corresponding eigenvalue per eigenvector)
 lambdas_X, V_X = np.linalg.eig(X)
 
-# confirm Xv = lambdav
+# confirm Xv = λv
 v_x = V_X[:,0]
 lambda_x = lambdas_X[0]
 
@@ -116,7 +116,7 @@ lambda_x3_pt = eigens_X.eigenvalues[2].float()
 x3_v = matrix_multiply(X_pt, x3_pt)
 lambda_v3_pt = lambda_x3_pt * x3_pt
 
-# show Xv and lambdav and check if they are equal
+# show Xv and λv and check if they are equal
 print(f"FIRST:\nXv: {x_v} lambdav: {lambda_v_pt}\nXv == lambdav: {check_equal(x_v, lambda_v_pt)}")
 print(f"SECOND:\nXv: {x2_v} lambdav: {lambda_v2_pt}\nXv == lambdav: {check_equal(x2_v, lambda_v2_pt)}")
 print(f"THIRD\nXv: {x3_v} lambdav: {lambda_v3_pt}\nXv == lambdav: {check_equal(x3_v, lambda_v3_pt)}")
