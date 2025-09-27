@@ -16,9 +16,6 @@ traceA_np = np.trace(A)
 # calculate trace of A_p
 A_p = torch.tensor([[-1, 2], [3, -2], [5, 7.]])
 
-# must have same dimensions
-# sqA_p = torch.concatenate((A_p, torch.tensor([[0, 0, 0]]).T), axis=1)
-
 traceA_p = torch.trace(A_p)
 
 # demonstrate ||A||ꜰ = √Tr(AAᵀ)
